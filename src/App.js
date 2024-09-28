@@ -13,16 +13,17 @@ import "./CSS/PitchDetector.css";
 function App() {
   return (
     <div className="App">
-      <Router>
+      {/* <Router>
         <Routes>
           <Route path="/todo" element={<Todolist />}></Route>
           <Route path="/catfact" element={<Catfact />}></Route>
           <Route path="/excuse" element={<Excusegen />}></Route>
           <Route path="/pitch" element={<PitchDetector />}></Route>
         </Routes>
-      </Router>
+      </Router> */}
       {/* <Todolist /> */}
       {/* <Catfact /> */}
+      <PitchDetector />
     </div>
   );
 }
