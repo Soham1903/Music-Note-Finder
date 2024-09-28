@@ -71,7 +71,7 @@ const PitchDetector = () => {
 
       // Get the Indian swara
       const indianSwaraName =
-        westernNoteName === "C" ? " नि" : swaraStrings[(note % 12)];
+        westernNoteName === "C" ? " नि" : swaraStrings[(note % 12) - 1];
       const indianNoteWithOctave =
         westernNoteName === "C"
           ? `${indianSwaraName}${octave - 1}`
