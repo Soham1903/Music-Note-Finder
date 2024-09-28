@@ -126,7 +126,7 @@ const PitchDetector = () => {
         setWesternNote(westernNoteWithOctave);
 
         // Get the Indian swara
-        const indianSwaraName = swaraStrings[note % 12];
+        const indianSwaraName = swaraStrings[(note % 12) - 1];
         const indianNoteWithOctave = `${indianSwaraName}${octave}`;
         setIndianNote(indianNoteWithOctave);
 
