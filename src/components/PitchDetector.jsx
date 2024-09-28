@@ -259,9 +259,6 @@ const PitchDetector = () => {
       </div>
       <div id="detector">
         <div>
-          <div id="pitch">
-            <b>Pitch:</b> {pitch}
-          </div>
           <div id="western-note">
             <b>Western Note:</b> {westernNote}
           </div>
