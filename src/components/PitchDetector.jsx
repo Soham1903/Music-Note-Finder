@@ -122,13 +122,17 @@ const PitchDetector = () => {
 
         // Get the Western note
         const westernNoteName = noteStrings[note % 12];
-        const westernNoteWithOctave = `${westernNoteName}${octave}`;
-        setWesternNote(westernNoteWithOctave);
+      const westernNoteWithOctave = `${westernNoteName}${octave}`;
+      setWesternNote(westernNoteWithOctave);
 
-        // Get the Indian swara
-        const indianSwaraName = swaraStrings[(note % 12) - 1];
-        const indianNoteWithOctave = `${indianSwaraName}${octave}`;
-        setIndianNote(indianNoteWithOctave);
+      // Get the Indian swara
+      const indianSwaraName =
+        westernNoteName === "C" ? "नि" : swaraStrings[(note % 12) - 1];
+      const indianNoteWithOctave =
+        westernNoteName === "C"
+          ? `${indianSwaraName}${octave - 1}`
+          : `${indianSwaraName}${octave}`;
+      setIndianNote(indianNoteWithOctave);
 
         // Set the frequency for display
         setFrequency(ac); // Set the frequency directly from auto-correlation result
