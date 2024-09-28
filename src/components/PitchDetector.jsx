@@ -3,7 +3,6 @@ import React, { useEffect, useRef, useState } from "react";
 const PitchDetector = () => {
   const [isPlayingAudio, setIsPlayingAudio] = useState(false);
   const [isPlayingMIDI, setIsPlayingMIDI] = useState(false);
-  const [pitch, setPitch] = useState("--");
   const [westernNote, setWesternNote] = useState("-");
   const [indianNote, setIndianNote] = useState("-");
   const [frequency, setFrequency] = useState(null); // Initialize frequency as null
