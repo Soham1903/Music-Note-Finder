@@ -247,7 +247,7 @@ const PitchDetector = () => {
 
   return (
     <div>
-      <img src="https://em-content.zobj.net/source/apple/391/musical-notes_1f3b6.png" />
+      <img src="https://em-content.zobj.net/source/apple/391/musical-notes_1f3b6.png" alt="note-img"/>
       <h1>Pitch Finder</h1>
       <div className="button-container">
         <button onClick={handleToggleAudio}>
@@ -259,6 +259,9 @@ const PitchDetector = () => {
       </div>
       <div id="detector">
         <div>
+          <div id="pitch">
+            <b>Pitch:</b> {pitch}
+          </div>
           <div id="western-note">
             <b>Western Note:</b> {westernNote}
           </div>
