@@ -79,7 +79,7 @@ const PitchDetector = () => {
       setIndianNote(indianNoteWithOctave);
 
       // Set pitch to note number for display
-      setPitch(note);
+      // setPitch(note);
       // Set frequency for display (assuming note frequency is known)
       setFrequency(440 * Math.pow(2, (note - 69) / 12)); // Frequency calculation
     }
@@ -111,7 +111,7 @@ const PitchDetector = () => {
     const ac = autoCorrelate(buf, audioContextRef.current.sampleRate);
 
     if (ac === -1) {
-      setPitch("--");
+      // setPitch("--");
       setWesternNote("-");
       setIndianNote("-");
       setFrequency(null); // Reset frequency when no pitch is detected
